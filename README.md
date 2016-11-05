@@ -1,5 +1,7 @@
 # OOAD-WEEK11
-State Diagram
+##State Diagram  5 ภาพ
+
+
 ภาพที่ 1
 
 
@@ -80,3 +82,93 @@ ChiangMai :Doi Inthanon National Park
 
 
 ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuUAArefLqDMrKqXAp4lFpi_cWj9WCUUCJ23FDp4JBcgb49oPc1kGM9IOdf_7nGLNe63baf-fu9bNaf6Obv-du9TOafcVbvYZ05IPhS35vP2QbmAq3G00)
+
+
+##Activity Diagram 5 ภาพ
+
+
+ภาพที่ 1
+
+
+@startuml
+
+(*) --> "walk"
+"walk" --> (*)
+
+@enduml
+
+
+
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuUBIqD9KqDMrKr0gJyp9LkA2K60He0mNbqDgNWfG7G00)
+
+ภาพที่ 2
+
+
+@startuml
+
+(*) --> "gotoschool"
+-->"get in a car"
+--> (*)
+
+@enduml
+
+
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuUBIqD9KqDMrKr1Apo_9BqxEoC_FKU822YYbfvOePEOf92ea9nQ1HHI0Ihcu75BpKe0Q0G00)
+
+
+ภาพที่ 3
+
+
+@startuml
+(*) --> "to night"
+
+if "go party" then
+  -->[true] "meeting friends"
+  --> "dressed up"
+  -right-> (*)
+else
+  ->[false] "take a shower"
+  -->[sleep] (*)
+endif
+
+@enduml
+
+
+![](http://www.plantuml.com/plantuml/img/BOv13eD024NtdEA7LTl4AnZlOLnCCimugOvcm3IzVL6xWZm-3mQrqEnO5tgydkYw7cmRQicpCL59uBnXzyYNORDKmXaQhHqoWLSHApKZjI8rAjzJS6oYAX77Vg5swfpx2P95vMJzc8AtBh7m5WJel7sa_HMZBYBxT6_KM1BHuDN__040)
+
+
+ภาพที่ 4
+
+
+@startuml
+(*)  --> "go gym"
+If "what paly" then
+--> [Yes] "weight training"
+--> "cardio"
+else
+--> "cardio"
+Endif
+-->(*)
+@enduml
+
+
+![](http://www.plantuml.com/plantuml/img/LOqn2iCm301tlK9eQWlvGiZIeKy8fOEe5LlWAC5MAVbzd6nPxmvkgCx5VtE6s-EEs7KzKbmmRZF1QqBw9tPSEM-4diJW2DwZr4zJeZ4vUc4rjKYdeo-Ne0k1v2fNyhIWqu7Q2GQnqAux)
+
+ภาพที่ 5
+
+
+@startuml
+
+(*) --> ===B1=== 
+--> "go paris"
+--> ===B2===
+
+===B1=== --> "go japan"
+--> ===B2===
+
+--> (*)
+
+@enduml
+
+
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuUBIqD9KqDMrKx2rjNKo118AN22UKdg-Ga5YKMQn4XTCqWX8S771bS5KPIKM9EQXgmBnW0PpSJcavgK0hG40)
