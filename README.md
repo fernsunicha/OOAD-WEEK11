@@ -8,6 +8,7 @@ State Diagram
 tv --> [*]
 tv : watch
 tv -> Remote
+
 Remote --> [*]
 Remote :change the channel
 @enduml
@@ -24,6 +25,7 @@ Remote :change the channel
 coffeemaker --> [*]
 coffeemaker :make coffee
 coffeemaker -> glass
+
 glass --> [*]
 glass :Coffee
 @enduml
